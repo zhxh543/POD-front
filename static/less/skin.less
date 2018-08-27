@@ -1,0 +1,394 @@
+//绿
+@mainColor:#28C195;
+@mR:40;
+@mG:193;
+@mB:149;
+
+
+//蓝
+//@mainColor: #30b8fe;
+//@mR: 48;
+//@mG: 184;
+//@mB: 254;
+
+//黑
+//@mainColor:#373737;
+//@mR:91;
+//@mG:97;
+//@mB:109;
+
+
+//橙
+/* @mainColor:#F5601E;
+ @mR:245;
+@mG:96;
+@mB:30;*/
+#homePage {
+  .con-block li h3 {
+    color: @mainColor;
+  }
+  .tab-tit {
+    .el-tabs__item.is-active {
+      color: @mainColor;
+    }
+    .el-tabs__active-bar {
+      background-color: @mainColor;
+    }
+  }
+  .item-num .el-badge__content {
+    background-color: @mainColor !important;
+  }
+  .con-block-icon {
+    dt {
+      color: @mainColor;
+    }
+  }
+  .el-switch.is-checked .el-switch__core {
+    border-color: @mainColor;
+    background-color: @mainColor;
+  }
+}
+
+/*右侧内容*/
+#rightCon {
+  .more {
+    color: @mainColor;
+  }
+}
+
+/*接口管理*/
+#inter-manage,
+#app-inter-manage,
+#table-second-inter {
+  .show-color {
+    color: @mainColor;
+  }
+}
+
+/*系统用户管理--各子页面通用*/
+#app {
+  .manage-tit:before {
+    background-color: @mainColor;
+  }
+  .crumbs {
+    position: relative;
+    padding-left: 12px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 16px;
+      top: 22px;
+      left: 0;
+      background-color: @mainColor;
+    }
+    .back_btn:hover {
+      color: @mainColor;
+    }
+  }
+  .app-state {
+    color: @mainColor;
+  }
+  .el-tabs__item.is-active,
+  .el-tabs__item:hover {
+    color: @mainColor;
+  }
+  .el-input__inner:focus {
+    border: 1px solid @mainColor;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: @mainColor;
+    border-color: @mainColor;
+  }
+  .el-checkbox__inner:hover {
+    border-color: @mainColor;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: @mainColor;
+  }
+  .el-tabs__active-bar {
+    background-color: @mainColor;
+  }
+  .el-checkbox.is-bordered.is-checked {
+
+    border-color: rgba(@mR, @mG, @mB, 0.7);
+    background-color: rgba(@mR, @mG, @mB, 0.06);
+  }
+  .el-button--info {
+    color: #999999;
+    background-color: #f5f5f5;
+    border-color: #dcdfe6;
+    &:hover, &:active, :focus {
+      color: #999999;
+      background-color: #dcdfe6;
+      border-color: #f5f5f5;
+    }
+  }
+  .el-button--primary {
+    border-color: @mainColor;
+    background: @mainColor;
+    &:hover, &:active, &:focus {
+      border-color: @mainColor;
+      color: #fff !important;
+    }
+  }
+  .el-button--primary.is-plain {
+    color: @mainColor !important;
+    border-color: rgba(@mR, @mG, @mB, 0.7);
+    background-color: rgba(@mR, @mG, @mB, 0.06) !important;
+    &:hover, &:active, &:focus {
+      background-color: @mainColor !important;
+      color: #fff !important;
+    }
+  }
+  .el-button--primary.is-disabled {
+    color: rgba(@mR, @mG, @mB, 0.6) !important;
+    border-color: rgba(@mR, @mG, @mB, 0.13);
+    background-color: rgba(@mR, @mG, @mB, 0.06);
+    &:hover, &:active, &:focus {
+      background-color: rgba(@mR, @mG, @mB, 0.06);
+      color: rgba(@mR, @mG, @mB, 0.6) !important;
+    }
+  }
+  .el-button--default.is-plain {
+    &:hover, &:active, &:focus {
+      border-color: @mainColor;
+    }
+  }
+  .el-pagination.is-background .el-pager li:hover {
+    color: @mainColor;
+  }
+  .el-pagination.is-background .el-pager li.active,
+  .el-pagination.is-background .el-pager li.active:hover {
+    background-color: @mainColor;
+    color: #fff;
+  }
+  .el-switch.is-checked .el-switch__core {
+    border-color: @mainColor;
+    background-color: @mainColor;
+  }
+  .el-upload__tip a,
+  .el-upload-dragger .el-upload__text em {
+    color: @mainColor;
+  }
+  .el-upload-dragger:hover {
+    border-color: @mainColor;
+  }
+  .el-textarea__inner:focus {
+    border: 1px solid @mainColor;
+  }
+  .el-checkbox {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .el-checkbox-group {
+    margin-right: -80px;
+  }
+  /*radio*/
+  .el-radio__input.is-checked .el-radio__inner {
+    border-color: @mainColor;
+    background: @mainColor;
+  }
+  .el-radio__input.is-checked + .el-radio__label {
+    color: @mainColor;
+  }
+  /*图标字体指向时显示皮肤颜色*/
+  /*平台标签管理*/
+  .el-table {
+    [class^=el-icon-] {
+      &:hover {
+        color: @mainColor;
+        cursor: pointer;
+      }
+    }
+  }
+  /*修正了tab的item有时出现蓝色box-shadow内阴影的情况*/
+  .el-tabs__item:focus.is-active.is-focus:not(:active) {
+    box-shadow: none !important;
+  }
+}
+
+#appUserAdd .down-fail, #userAdd .down-fail, #blackAdd .down-fail {
+  color: @mainColor;
+  cursor: pointer;
+}
+
+/*微网站头表竖杠颜色,一级导航编辑图颜色*/
+#mini-web, #web {
+  .app-title {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 17px;
+      top: 22px;
+      left: 0;
+      background: @mainColor;
+    }
+  }
+  .grid-content {
+    .pageType-title, .pageType-box {
+      i {
+        font-size: 20px;
+        color: @mainColor;
+      }
+    }
+  }
+}
+
+/*公众号数字图标颜色*/
+#public-num {
+  .counts {
+    .grid-content {
+      i {
+        color: @mainColor;
+      }
+      span {
+        color: @mainColor;
+      }
+    }
+  }
+}
+
+/*以下样式，放在id里面不起作用，需要拿出来，在全局中定义*/
+.el-select-dropdown__item.selected {
+  color: @mainColor !important;
+}
+
+/*dropdown element样式从写*/
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+  background: @mainColor !important;
+  color: #ffffff !important;
+}
+
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  color: #fff;
+  background-color: @mainColor !important;
+  border-color: @mainColor !important;
+  -webkit-box-shadow: -1px 0 0 0 @mainColor !important;
+  box-shadow: -1px 0 0 0 @mainColor !important;
+}
+
+#downResource,
+#onlineProManage {
+  .displayMode {
+    i {
+      color: @mainColor;
+    }
+  }
+  .el-dropdown-link {
+    cursor: pointer;
+    color: @mainColor;
+  }
+  .dropSet {
+    color: @mainColor;
+  }
+}
+#comOpration,
+#onlineComOpration {
+  .el-dropdown {
+    .icon-setting {
+      color: #30b8fe;
+    }
+  }
+}
+
+.nav-u-title {
+  position: relative;
+  padding-left: 12px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    top: 22px;
+    left: 0;
+    background-color: @mainColor;
+  }
+}
+
+#userAction {
+  .box-tit {
+    color: @mainColor;
+    font-size: 14px;
+    line-height: 40px;
+    position: relative;
+    padding-left: 8px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      top: 12px;
+      left: 0;
+      background-color: @mainColor;
+    }
+  }
+}
+
+#wechatOperate #wechatOperateBox .skin_active,
+#wechatOperate #material .skin_active {
+  color: @mainColor;
+  border-color: @mainColor;
+}
+
+/*编辑物流模板*/
+.editorExpress-Provincepover .province:hover {
+  color: @mainColor;
+}
+
+#addGroup {
+  .unGroupPro {
+    .info {
+      .type {
+        color: @mainColor;
+      }
+    }
+  }
+}
+
+#orderDetailDialog {
+  .orderList {
+    .info {
+      .type {
+        color: @mainColor;
+      }
+    }
+  }
+}
+//以下是rds公共
+/* 面包屑 */
+.crumbs:before {
+  background-color: @mainColor;
+}
+
+/* 首页*/
+.box_item{
+  h2 {
+    color: @mainColor;
+  }
+
+  a.btn_item{
+    &:hover{
+      color: @mainColor;
+    }
+  }
+}
+/*头部背景*/
+.top {
+  //background: #373737;
+  background: @mainColor;
+}
+/*头部背景*/
+.nav a:hover, .nav a.linkActive{
+  background: @mainColor;
+}
+.showActive{
+  background: @mainColor;
+}
+/*左侧菜单*/
+
+.nav a {
+  color: @mainColor;
+}

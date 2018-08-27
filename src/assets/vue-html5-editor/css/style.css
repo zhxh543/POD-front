@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.vue-html5-editor > .content img, .page_area img {
+  width: auto;
+  height: auto;
+}
+
+.vue-html5-editor > .content ul, .vue-html5-editor > .content li, .vue-html5-editor > .content ol,
+.page_area ul, .page_area li, .page_area ol {
+  margin: 0 0.5em;
+  padding: 0 0.1em;
+}
+
+.vue-html5-editor > .content ul li, .vue-html5-editor > .content ul,
+.page_area ul li, .page_area ul {
+  list-style: disc;
+}
+
+.vue-html5-editor > .content ol li, .vue-html5-editor > .content ol,
+.page_area ol li, .page_area ol {
+  list-style: decimal;
+}
+
+.vue-html5-editor > .content b, .vue-html5-editor > .content strong,
+.page_area b, .page_area strong {
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content sub,
+.page_area sub {
+  vertical-align: sub;
+}
+
+.vue-html5-editor > .content sup,
+.page_area sup {
+  vertical-align: super;
+}
+
+.vue-html5-editor > .content h1,
+.page_area h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content h2,
+.page_area h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content h3,
+.page_area h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content h4,
+.page_area h4 {
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content h5,
+.page_area h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.vue-html5-editor > .content h6,
+.page_area h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+/*.vue-html5-editor > .content h1 *,*/
+/*.vue-html5-editor > .content h2 *,*/
+/*.vue-html5-editor > .content h3 *,*/
+/*.vue-html5-editor > .content h4 *,*/
+/*.vue-html5-editor > .content h5 *,*/
+/*.vue-html5-editor > .content h6 *,*/
+.vue-html5-editor > .content p {
+  font-size: inherit !important;
+}

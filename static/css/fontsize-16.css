@@ -1,0 +1,19 @@
+/* 首页*/
+.box_item a.btn_item {
+  font-size: 16px !important;
+}
+.box_item p {
+  font-size: 16px !important;
+}
+/*审核*/
+.box_exa_item div h2 {
+  font-size: 20px !important;
+}
+.box_exa_item div p {
+  font-size: 18px !important;
+}
+
+/*菜单字号*/
+.nav a,dl.menu_box a {
+  font-size: 18px !important;
+}
